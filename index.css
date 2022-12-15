@@ -1,0 +1,144 @@
+body, input {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-color: #282c34;
+}
+  
+.logo {
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+main {
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin: 50px;
+}
+.ListTitle {
+    border-radius: 20px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+#ListContainer {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+    width: 60vw;
+}
+
+.ListItemContainer {
+    /*border: 4px solid white;*/
+    border-radius: 20px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.ListItemContainer:hover {
+    outline: 4px solid white !important;
+    /*cursor: pointer;*/
+}
+
+#ListAddItemContainer {
+    margin: 50px auto;
+    width: 25vw;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.116);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#ListAddItemContainer:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+.ListAddItemInput {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+}
+
+#ListAddItemMessage {
+    font-size: calc(5px + 2vmin);
+    display: none;
+    margin-bottom: 50px;
+}
+
+.checkToDoIcon {
+    cursor: pointer;
+    position: absolute;
+
+    right: 30px;
+}
+
+#login {
+    position: fixed;
+    width: 40vw;
+    height: 25vh;
+    background-color: rgb(131, 131, 131);
+    top: 35vh;
+    left: 30vw;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login div {
+    margin: 20px;
+}
+#logoutButton {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 10px;
+    width: 10vw;
+    height: 6vh;
+    font-size: calc(5px + 2vmin);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 50px;
+
+    cursor: pointer;
+    visibility: hidden;
+}
+#logoutButton:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+#labNames {
+    font-size: calc(3px + 2vmin);
+}
