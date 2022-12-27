@@ -38,7 +38,7 @@ header {
 } 
 
 #ListContainer {
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: #282c34;
     border-radius: 20px;
     width: 60vw;
 }
@@ -54,6 +54,9 @@ header {
     justify-content: center;
 
     position: relative;
+
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.116);
 }
 .ListItemContainer:hover {
     outline: 4px solid white !important;
@@ -98,47 +101,33 @@ header {
     right: 30px;
 }
 
-#login {
-    position: fixed;
-    width: 40vw;
-    height: 25vh;
-    background-color: rgb(131, 131, 131);
-    top: 35vh;
-    left: 30vw;
+.prio {
+    position: absolute;
+    left: 0;
+    background-color: rgb(82, 117, 230);
+    width: 100px;
+    min-height: 100px;
     border-radius: 20px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-#login div {
-    margin: 20px;
-}
-#logoutButton {
-    background-color: rgba(255, 255, 255, 0.116);
-    border-radius: 10px;
-    width: 10vw;
-    height: 6vh;
-    font-size: calc(5px + 2vmin);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.ListAddPrioInput {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 50px;
+    left: 0;
+    width: 100px;
+    min-height: 100px;
 
-    cursor: pointer;
-    visibility: hidden;
-}
-#logoutButton:hover {
-    background-color: rgba(255, 255, 255, 0.295);
+    background-color: rgb(82, 117, 230);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 5px 5px 5px 14px;
 }
 
-#labNames {
+#labName {
     font-size: calc(3px + 2vmin);
 }
