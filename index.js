@@ -39,6 +39,7 @@ const ToDo = {
             let inputPrio = document.createElement("input");
             inputPrio.type = "number";
             inputPrio.min = "0";
+            inputPrio.value = "3";
             inputPrio.classList.add("ListAddPrioInput");
 
             input.onkeydown = (evt) => {
