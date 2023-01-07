@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 });
 
 const ToDo = {
-    toDoArray: [],
+    URL: "http://127.0.0.1:8080/todos/", // <--- hier Backend URL setzen
     addToDoInputActive: false,
 
     async init(){
@@ -15,7 +15,7 @@ const ToDo = {
             this.addToDo();
         });
 
-        await fetch("http://127.0.0.1:8080/todos/")
+        await fetch(this.URL)
         .then(res => {
             return res.json();
         })
@@ -115,7 +115,7 @@ const ToDo = {
 
         let json = { "todo": des, "priority": prio };
 
-        await fetch("http://127.0.0.1:8080/todos/", {
+        await fetch(this.URL, {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(json)
@@ -130,7 +130,7 @@ const ToDo = {
 
         let json = { "todo": des, "priority": prio };
 
-        await fetch("http://127.0.0.1:8080/todos/", {
+        await fetch(this.URL, {
             method: "DELETE",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(json)
