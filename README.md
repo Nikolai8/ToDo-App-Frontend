@@ -14,3 +14,8 @@ Zum Setzen des Backend-Endpunktes muss die URL-Variable am Anfang des JS-Codes g
 Falls das Frontend nicht mit dem Backend kommunizieren kann, liegt es möglicherweise am nicht eingerichteten CORS des Backend-Servers, dies wird auch als Fehler im Console-Log des Browsers angezeigt.
 
 ![image](https://user-images.githubusercontent.com/35593161/211169776-ed4aa1ee-e730-4be8-b3f8-b0a73ad4cc22.png)
+
+- Um beim Spring-Backend CORS einzurichten über dem ApiController und dem JpaController folgenden Code einfügen:
+`@CrossOrigin(origins = "*")`
+
+![image](https://user-images.githubusercontent.com/35593161/211171163-ea8f0a5e-f570-4f1a-a79e-f59e62b39534.png)
