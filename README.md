@@ -6,6 +6,7 @@ In „Vanilla JavaScript" ohne Framework geschrieben und statisch von NGINX-Serv
 
 ## Setzen von Backend URL und Port
 Zum Setzen des Backend-Endpunktes muss die URL-Variable am Anfang des JS-Codes geändert werden und das Docker Image neu generiert werden, falls über Docker ausgeführt werden soll.
+- Standard Backend-URL: 'http://127.0.0.1:8080/todos/'
 
 ![image](https://user-images.githubusercontent.com/35593161/211169286-0ac41a9a-ab8f-4cad-b932-5c778f52371d.png)
 
