@@ -2,7 +2,7 @@
 In „Vanilla JavaScript" ohne Framework geschrieben und statisch von NGINX-Server als Docker-Image geliefert, daher kann JavaScript nicht wie in Node.js Environment-Variablen lesen, weil das JavaScript nur im Browser ausgeführt wird und es hier keine Environment-Variablen des Systems gibt. 
 - Es wäre möglich über Node.js als Server die Seite zu liefern, dann könnten Environment-Variablen über `process.env.ENV_VARIABLE`, dies würde aber eine zusätzliche Server-Programmierung erfordern.
 - Mit Benutzung eines auf beispielsweise Node.js basierendes Framework wie React können auch Environment-Variablen gestzt werden, dazu muss man aber das Projekt umschreiben.
-- Über NGINX lassen sich über Docker auch Environment-Variablen setzen, diese aber über eine statisch geliefertes JavaScript auszulesen gestaltet sich aber als nicht einfach möglich.
+- Über NGINX lassen sich über Docker auch Environment-Variablen setzen, diese aber über eine statisch geliefertes JavaScript auszulesen gestaltet sich aber als nicht so einfach möglich.
 
 ## Setzen von Backend URL und Port
 Zum Setzen des Backend-Endpunktes muss die URL-Variable am Anfang des JS-Codes geändert werden und das Docker Image neu generiert werden, falls über Docker ausgeführt werden soll.
