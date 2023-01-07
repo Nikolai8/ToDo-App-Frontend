@@ -18,4 +18,4 @@ Falls das Frontend nicht mit dem Backend kommunizieren kann, liegt es möglicher
 - Um beim Spring-Backend CORS einzurichten über dem ApiController und dem JpaController folgenden Code einfügen:
 `@CrossOrigin(origins = "*")`
 
-![image](https://user-images.githubusercontent.com/35593161/211171163-ea8f0a5e-f570-4f1a-a79e-f59e62b39534.png)
+   ![image](https://user-images.githubusercontent.com/35593161/211171163-ea8f0a5e-f570-4f1a-a79e-f59e62b39534.png)
