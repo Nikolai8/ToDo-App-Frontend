@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 });
 
 const ToDo = {
-    URL: "http://127.0.0.1:8080/todos/", // <--- hier Backend URL setzen
+    URL: "http://127.0.0.1:8080/todos/", // <--- hier Backend URL + Port setzen
     addToDoInputActive: false,
 
     async init(){
