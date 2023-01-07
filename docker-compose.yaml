@@ -9,7 +9,7 @@ services:
     #environment:
     #  - SERVER_PORT=8090
     #  - BACKEND_ENDPOINT=http://backend:8080/todos/
-    image: "todo-frontend-nikolai:v1"
+    image: "nikolai8/todo-frontend-nikolai:v1"
   backend:
     container_name: backend
     ports:
