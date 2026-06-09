@@ -1,10 +1,10 @@
 # ToDo-App-Frontend 📝
 
-A lightweight, vanilla JavaScript todo list application built with pure HTML, CSS, and JavaScript. The frontend is statically served via NGINX as a Docker container and communicates with a REST backend API for task management.
+A lightweight, vanilla JavaScript todo list application built with pure HTML, CSS, and JavaScript. The frontend is statically served via NGINX as a Docker container and communicates with a REST backend API.
 
 ## 📋 Project Overview
 
-**ToDo-App-Frontend** is a responsive web application that allows users to create, manage, and organize their tasks with priority levels. The app features a clean, intuitive interface and seamlessly integrates with a dedicated backend API for data persistence.
+**ToDo-App-Frontend** is a responsive web application that allows users to create, manage, and organize their tasks with priority levels. The app features a clean, intuitive interface and seamless integration with a backend API.
 
 Built without any frameworks to demonstrate core web development concepts and Docker containerization.
 
@@ -226,7 +226,22 @@ Make sure to set up both components for a complete working application!
 The app is hosted on GitHub Pages:
 👉 [https://nikolai8.github.io/ToDo-App-Frontend/](https://nikolai8.github.io/ToDo-App-Frontend/)
 
-*Note: Live demo requires the backend to be running and accessible with proper CORS configuration.*
+### ⚠️ Important Note about the Live Demo
+
+The live demo **displays the frontend interface and is fully functional**, but it **does not persist data** because the backend API is not running on GitHub Pages. 
+
+**To use the app with data persistence, you have two options:**
+
+1. **Local Development** (Recommended for testing):
+   - Clone this repository
+   - Start the backend from [ToDo-App-Backend](https://github.com/Nikolai8/ToDo-App-Backend)
+   - Run the frontend locally (see "Getting Started" section above)
+   - Data will be saved to your local backend database
+
+2. **Self-hosted Deployment**:
+   - Host the backend API on your own server
+   - Update the `URL` variable in `index.js` to point to your backend
+   - Deploy the frontend and enjoy full functionality with persistent storage
 
 ## 📚 Learning Resources
 
@@ -253,6 +268,10 @@ This project demonstrates:
 - **Check**: Input fields are not empty
 - **Check**: Backend is responding to POST requests
 - **Check**: Browser console for JavaScript errors
+
+### Issue: Live demo doesn't save data
+- **Expected behavior**: The GitHub Pages demo is frontend-only and has no backend
+- **Solution**: See the "Live Demo" section above for data persistence options
 
 ## 📄 License
 
